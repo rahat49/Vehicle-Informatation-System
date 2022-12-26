@@ -1,0 +1,79 @@
+﻿@model IEnumerable<VIMS.DataModel.User>
+
+@{
+    ViewData["Title"] = "Citizen";
+    Layout = "_AdminLayout";
+}
+<style>
+
+    .tgroup, h1 {
+        margin: 50px;
+    }
+</style>
+<div>
+    <h1 class="mt-4">Citizen List</h1>
+
+    <div class="tgroup">
+        <table class="table table-striped text-center">
+
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Vehnum)
+                    </th>
+
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NID)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@item.Uid">Edit</a> |
+                            <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.Uid">Details</a> |
+                            <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.Uid">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+  
+</div>

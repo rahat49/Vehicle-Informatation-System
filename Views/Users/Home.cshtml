@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Welcome to Vehicle Information Management System";
+    Layout = "_Layout";
+}
+<!-- Header-->
+<header class="text-dark" style="margin-top:90px;">
+    <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Vehilcle Information Management System</h1>
+        <h2>Bangladesh Road Transport Authority </h2>
+        <p class="lead">Government of the People's Republic of Bangladesh </p>
+
+    </div>
+</header>
+<section>
+    <div class="container">
+        <div class="container-fluid px-4">
+            <h1 class="mt-4 text-dark">Citizen Portal</h1>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-success text-white mb-4">
+                        <div class="card-body">Fitness</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" asp-action="RenewApply" asp-controller="Users">Renew Apply</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-success text-white mb-4">
+                        <div class="card-body">Rules Violation Report</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" asp-action="ViolationReport" asp-controller="Users">Show Report</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="card bg-success text-white mb-4">
+                        <div class="card-body">Accident Report</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" asp-action="AccidentReport" asp-controller="Users">Show Report</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+

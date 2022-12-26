@@ -1,0 +1,216 @@
+﻿@{
+    ViewData["Title"] = "BRTA Dashboard";
+
+    Layout = "_AdminLayout";
+}
+<style>
+    .grey-bg {
+        background-color: #F5F7FA;
+    }
+</style>
+<head>
+
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="grey-bg container-fluid">
+    <section id="minimal-statistics">
+        <div class="row">
+            <div class="col-12 mt-3 mb-1">
+                <h4 class="text-uppercase">BRTA DASHBOARD</h4>
+                <p>Dashboard</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="align-self-center">
+                                 
+
+                                    <i class='fas fa-user-alt' style='font-size:42px'></i>
+                                </div>
+                                <div class="media-body text-right">
+                                    <h3>@ViewBag.user</h3>
+                                    <span>Citizen</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="align-self-center">
+                                    <i class="fa fa-exclamation-triangle warning font-large-2 float-left"></i>
+                                </div>
+                                <div class="media-body text-right">
+                                    <h3>@ViewBag.rulesviolation</h3>
+                                    <span>Rules Violation Case</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="align-self-center">
+                                    <i class="fas fa-car-crash danger font-large-2 float-left"></i>
+                                </div>
+                                <div class="media-body text-right">
+                                    <h3>@ViewBag.accident</h3>
+                                    <span>Accident Case</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="align-self-center">
+                                    <i class="fas fa-car-side primary font-large-2 float-left"></i>
+                                </div>
+                                <div class="media-body text-right">
+                                    <h3>@ViewBag.pending</h3>
+                                    <span>Fitness Renew Application</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="media-body text-left">
+                                    <h3 class="success">@ViewBag.approve</h3>
+                                    <span>Approved Application</span>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fa fa-check success font-large-2 float-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="media-body text-left">
+                                    <h3 class="danger">@ViewBag.reject</h3>
+                                    <span>Reject Application</span>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fa fa-ban danger font-large-2 float-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="media-body text-left">
+                                    <h3 class="primary">@ViewBag.Trafficpolice</h3>
+                                    <span>Traffic Police</span>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class='fas fa-user warning' style='font-size:42px; color:blue'></i>
+
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="media-body text-left">
+                                    <h3 class="primary">@ViewBag.vehicle</h3>
+                                    <span>Vehicle</span>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="fa fa-car primary font-large-2 float-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="media-body text-left">
+                                    <h3 class="primary">@ViewBag.total</h3>
+                                    <span>Total User</span>
+                                </div>
+                                <div class="align-self-center">
+                               <i class='fas fa-users'  style='font-size:42px'></i>
+                               </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <div class="media d-flex">
+                                <div class="media-body text-left">
+                                    <h3 class="secondary">@ViewBag.notice</h3>
+                                    <span>Notice</span>
+                                </div>
+                                <div class="align-self-center">
+                                    <i class="	far fa-sticky-note secondary font-large-2 float-right"></i>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+</div>

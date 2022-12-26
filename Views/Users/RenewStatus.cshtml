@@ -1,0 +1,65 @@
+﻿@model IEnumerable<VIMS.DataModel.Renewapply>
+@{
+    ViewData["Title"] = "Renew Apply Status";
+    Layout = "_Layout";
+}
+
+<header class="text-dark" style="margin-top:90px;">
+    <div class="container px-4 text-center">
+        <h1>Renew Status</h1>
+
+    </div>
+</header>
+@if (Model.Count() == 0)
+{
+    <div class="d-flex justify-content-center">
+        <h3 class="alert alert-success text-dark ">No Fitness Renew Record</h3>
+    </div>
+}
+else
+{
+    <table class="table table-striped text-center table-dark">
+
+        <thead>
+            <tr>
+
+                <th>Owner Name</th>
+                <th>Phone Number</th>
+                <th>Vehicle Category</th>
+                <th>Vehicle Number</th>
+                <th>Status</th>
+                <th>Detail</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.OwnerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vcategory)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vehnum)
+                    </td>
+                    <td>
+                        <span class="btn btn-success btn-sm"> @Html.DisplayFor(modelItem => item.Status)</span>
+                    </td>
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="FitnessApplicationView" asp-route-id="@item.id">View</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+                              

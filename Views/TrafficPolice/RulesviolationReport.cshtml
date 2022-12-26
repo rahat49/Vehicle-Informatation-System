@@ -1,0 +1,87 @@
+﻿@model IEnumerable<VIMS.DataModel.RulesViolationForm>
+@{
+    ViewData["Title"] = "Rules Violation List";
+    Layout = "_TrafficPoliceLayout";
+}
+<style>
+
+    .tgroup, h1, p {
+        margin: 30px;
+    }
+</style>
+<div>
+    <h1 class="mt-4">Rules Violation Report -  @ViewBag.rulesviolation </h1>
+    <p>
+        <a class="btn btn-primary" asp-action="PDFRulesViolation">Report</a>
+    </p>
+    <div class="tgroup">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>
+                        Traffic Police Name
+                    </th>
+                    <th>
+                       Rules Type
+                       
+                    </th>
+                    <th>
+                        Vehicle Category
+                        
+                    </th>
+                    <th>
+                        Vehicle Number
+                       
+                    </th>
+                    <th>
+                        Vehicle Owner Name
+                      
+                    </th>
+                    <th>
+                        Fees
+                       
+                    </th>
+                    <th>
+                       Location
+                    </th>
+                    <th>
+                       Date
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TPoliceName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RulesType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VehCategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VehOwnerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fees)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Location)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

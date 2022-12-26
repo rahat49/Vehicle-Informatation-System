@@ -1,0 +1,63 @@
+﻿@model VIMS.DataModel.TrafficPolice
+
+@{
+    ViewData["Title"] = "Create Traffic Police Account";
+    Layout = "_AdminLayout";
+}
+<div>
+    <div class="container-fluid px-4">
+        <h1 class="mt-4">Create Traffic Police Account</h1>
+        <form asp-action="TpoliceCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row g-3 align-items-center">
+                <div class="col-6">
+                    <label asp-for="Name" class="form-label">Traffic Police Name</label>
+                    <input type="text" class="form-control" asp-for="Name" aria-describedby="emailHelp">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+
+                    <label asp-for="Email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" asp-for="Email" aria-describedby="emailHelp">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+
+                    <label asp-for="Phone" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" asp-for="Phone" aria-describedby="emailHelp">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <label asp-for="Policeid" class="form-label">Traffic Police ID</label>
+                    <input type="text" class="form-control" asp-for="Policeid" aria-describedby="emailHelp">
+                    <span asp-validation-for="Policeid" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <label asp-for="Designation" class="form-label">Designation</label>
+                    <input type="text" class="form-control" asp-for="Designation" aria-describedby="emailHelp">
+                    <span asp-validation-for="Designation" class="text-danger"></span>
+                </div>
+                <div class="col-6">
+                    <label asp-for="Range" class="form-label">Range</label>
+                    <input asp-for="Range" type="text" class="form-control" aria-describedby="emailHelp">
+                    <span asp-validation-for="Range" class="text-danger"></span>
+                </div>
+
+                <div class="col-6">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input asp-for="Password" type="password" class="form-control">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <button style="margin-top:20px;" type="submit" asp-action="TpoliceCreate" asp-controller="Admins" class="btn btn-outline-primary">Create</button>
+
+            </div>
+        </form>
+        <div class="mt-3">
+            <a asp-action="TpoliceList" class="text-decoration-none">View List</a>
+            | <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+        </div>
+    </div>
+
+</div>

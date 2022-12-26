@@ -1,0 +1,53 @@
+﻿@model VIMS.DataModel.Notice
+
+@{
+    ViewData["Title"] = "Create Notice";
+    Layout = "_AdminLayout";
+}
+<style>
+    #link {
+        margin-top: 10px;
+    }
+</style>
+<div class="m-4">
+    <h1 class="mt-4">Add Notice</h1>
+    <h2 id="titletext" class="alert alert-info"></h2>
+    <form asp-action="Notice">
+        <div class="form-group col-7">
+            <label asp-for="Heading">Heading</label>
+            <input asp-for="Heading" type="text" class="form-control">
+        </div>
+        <div class="form-group pb-2">
+
+            <input type="hidden" asp-for="Date" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+        </div>
+
+        <div class="form-group col-7">
+            <label asp-for="Detail">Notice</label>
+            <input asp-for="Detail" type="text" class="form-control text">
+        </div>
+        <div class="form-group">
+            <button style="margin-top:20px;" type="submit" class="btn btn-outline-primary">Create</button>
+
+        </div>
+    </form>
+    <div id="link">
+        <a class="text-decoration-none" asp-action="NoticeView" asp-controller="Admins">View Notice</a>
+        | <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script>
+        $(document).ready(function () {
+            $('.text').keyup(function () {
+                let s = $(this).val();
+                $('#titletext').html(s);
+                $('text').val(s);
+            });
+        });
+    </script>
+
+
+}

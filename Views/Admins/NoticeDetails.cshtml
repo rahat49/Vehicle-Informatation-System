@@ -1,0 +1,50 @@
+﻿@model VIMS.DataModel.Notice
+
+@{
+    ViewData["Title"] = "Notice Details";
+    Layout = "_AdminLayout";
+}
+<style>
+    .container {
+        margin:10px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+
+    <h1>Details</h1>
+
+    <div>
+        <h4>Notice</h4>
+        <hr />
+        <dl class="row">
+            
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Heading)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Heading)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Date)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Date)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Detail)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Detail)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a class="text-decoration-none" asp-action="NoticeEdit" asp-route-id="@Model?.Id">Edit</a> |
+        <a class="text-decoration-none" asp-action="NoticeView">Back to List</a> |
+        <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>

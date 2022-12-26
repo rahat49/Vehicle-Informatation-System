@@ -1,0 +1,87 @@
+﻿@model IEnumerable<VIMS.DataModel.Renewapply>
+
+@{
+    ViewData["Title"] = "Fitness Renew Report";
+    Layout = "_ReportLayout";
+}
+
+<style>
+
+    .tgroup, h1,p{
+        margin: 30px;
+    }
+</style>
+<div>
+    <div class="text-center pt-5">
+        <h3 style="text-decoration: underline rgb(146, 146, 146);">Fitness Renew  Report</h3>
+
+
+    </div>
+    <div class="tgroup">
+        <table class="table table-bordered border-primary text-center">
+
+            <thead>
+                <tr>
+                    <th>SL#</th>
+                    <th>Owner Name</th>
+                    <th>Phone Number</th>
+                    <th>Vehicle Category</th>
+                    <th>Vehicle Number</th>
+                    <th>Brand Name</th>
+                    <th>Color</th>
+                    <th>Chassis No.</th>
+                    <th>Engine No.</th>
+                    <th>Fees</th>
+                    <th>Status</th>
+
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @{ int i = 1;}
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @i
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OwnerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vcategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Brandname)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Color)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ChassisNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EngineNo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fees)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+
+                        </td>
+
+                    </tr>
+                        i++;
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿@model VIMS.DataModel.Notice
+
+@{
+    ViewData["Title"] = "Edit Notice";
+    Layout = "_AdminLayout";
+}
+<style>
+    .container {
+        margin: 10px;
+    }
+    .form-group
+    {
+        margin-top:10px;
+    }
+</style>
+<div class="container">
+    <h1>Update</h1>
+
+    <h4>Notice</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-7">
+            <form asp-action="NoticeEdit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Heading" class="control-label"></label>
+                    <input asp-for="Heading" class="form-control" />
+                    <span asp-validation-for="Heading" class="text-danger"></span>
+                </div>
+                
+
+                    <input type="hidden" asp-for="Date" />
+          
+                <div class="form-group">
+                    <label asp-for="Detail" class="control-label"></label>
+                    <input asp-for="Detail" class="form-control" />
+                    <span asp-validation-for="Detail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-outline-success btn-sm" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <a class="text-decoration-none " asp-action="NoticeView">Back to List</a> |
+        <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>
+

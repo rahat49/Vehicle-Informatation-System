@@ -1,0 +1,83 @@
+﻿@model VIMS.DataModel.AccidentCase
+@{
+    ViewData["Title"] = "Add Rules Violation Case";
+    Layout = "_TrafficPoliceLayout";
+}
+<div class="container-fluid px-4">
+
+    <h1 class="mt-4">Add Accident Case</h1>
+
+    <form asp-action="AddAccidentCase">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row g-3 align-items-center">
+            <div class="col-6">
+                <label asp-for="AccidentType" class="form-label">Accident Type</label>
+                <select asp-for="AccidentType" class="form-select" aria-label="Default select example">
+                    <option selected>Select Accident Type</option>
+                    <option value="Major">Major</option>
+                    <option value="Minor">Minor</option>
+                    <option value="Simple">Simple</option>
+
+                </select>
+
+            </div>
+
+            <div class="col-6">
+                <label asp-for="AccidentVCate" class="form-label">Accident Vehicle Category</label>
+                <select asp-for="AccidentVCate" class="form-select" aria-label="Default select example">
+                    <option selected>Select Vehicle Category</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Car">Car</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Others">Others</option>
+                </select>
+
+            </div>
+
+            <div class="col-6">
+                <label asp-for="Vehnum" class="form-label">Vehicle Number</label>
+                <input asp-for="Vehnum" type="text" class="form-control" required>
+                <span asp-validation-for="Vehnum" class="text-danger"></span>
+            </div>
+
+            <div class="col-6">
+                <label asp-for="Alocation" class="form-label">Accident Location</label>
+                <input asp-for="Alocation" type="text" class="form-control" required>
+                <span asp-validation-for="Alocation" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="Damage" class="form-label">Vehicle Damage Parcentage</label>
+                <input asp-for="Damage" type="text" class="form-control" placeholder="e.g. 1.5,2" required>
+                <span asp-validation-for="Damage" class="text-danger"></span>
+            </div>
+
+
+        
+        <div class="col-6">
+            <label asp-for="Tpeople" class="form-label">How Many People in Vehicle</label>
+            <input asp-for="Tpeople" type="text" class="form-control" required>
+            <span asp-validation-for="Tpeople" class="text-danger"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="Injuredp" class="form-label">Injured People</label>
+            <input asp-for="Injuredp" type="text" class="form-control" required>
+            <span asp-validation-for="Injuredp" class="text-danger"></span>
+        </div>
+        <div class="col-6">
+            <label asp-for="Deathp" class="form-label">Death People</label>
+            <input asp-for="Deathp" type="text" class="form-control" required>
+            <span asp-validation-for="Deathp" class="text-danger"></span>
+        </div>
+        <div class="col-6">
+
+            <input type="hidden" asp-for="ADate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+
+        </div>
+            </div>
+
+<button style="margin-top:20px;" type="submit" asp-action="AddaccidentCase" asp-controller="TrafficPolice" class="btn btn-outline-primary">Submit</</button>
+</form>
+</div>
+

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>@ViewData["Title"] - VIMS</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!--------Mdb-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="~/css/userstyles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>-->
+    <!----MDB-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css">-->
+     @*<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">*@
+    <!-----Notification Toast cdn-->
+    <link rel="stylesheet"   href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+<body class="sb-nav-fixed" style="background-color: whitesmoke">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color:#37517e;">
+        <!-- Navbar Brand-->
+        <a class="navbar-brand ps-3" asp-action="AdminDashboard" asp-controller="Admins">VIMS</a>
+        <!-- Sidebar Toggle-->
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+        <!-- Navbar Search-->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+
+            </div>
+        </form>
+        <!-- Navbar-->
+        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Logout" asp-controller="Admins" role="button"><i class='fas fa-sign-out-alt' style='font-size:20px'></i></a>
+
+            </li>
+        </ul>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu bg-dark">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Admin Pannel</div>
+                        <a asp-action="AdminDashboard" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Dashboard
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Interface</div>
+                        <a asp-action="CitizenData" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user-alt"></i></div>
+                            Citizen
+                        </a>
+
+                        <a asp-action="Vehiclelist" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-car"></i></div>
+                            Vehicle
+                        </a>
+                        <a asp-action="ServiceView" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fa fa-wrench"></i></div>
+                            Service
+                        </a>
+                        <a asp-action="NoticeView" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="far fa-sticky-note"></i></div>
+                            Notice
+                        </a>
+
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                            Traffic Police
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a asp-action="TpoliceCreate" asp-controller="Admins" class="nav-link">Create Account</a>
+                                <a asp-action="TpoliceList" asp-controller="Admins" class="nav-link">Traffic Police List</a>
+
+                            </nav>
+                        </div>
+
+                        <a class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-car-side"></i></div>
+                            Fitness
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link" asp-action="RenewRequest" asp-controller="Admins">
+                                    <div class="sb-nav-link-icon"></div>
+                                    Renew Request
+                                </a>
+                                <a class="nav-link" asp-action="RenewApproved" asp-controller="Admins">
+                                    <div class="sb-nav-link-icon"></div>
+                                    Renew Status
+                                </a>
+
+                            </nav>
+
+                        </div>
+
+
+
+                        <!-------Report-------->
+                        <div class="sb-sidenav-menu-heading">Report</div>
+                        <a class="nav-link" asp-action="CitizenReport" asp-controller="Admins">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Citizen
+
+                        </a>
+
+                        <a asp-action="TpoliceReport" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Traffic Police
+
+                        </a>
+                        <a asp-action="ReportFitnessRenew" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Fitness Renew
+
+                        </a>
+                        <a asp-action="ViolationReport" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Violation
+                        </a>
+                        <a asp-action="AccidentReport" asp-controller="Admins" class="nav-link">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Accident
+                        </a>
+                    </div>
+                </div>
+                <div class="sb-sidenav-footer" style="background-color:#37517e;">
+                    <div class="small">Logged in as:</div>
+                    BRTA
+                </div>
+            </nav>
+        </div>
+        <!------------Content---------->
+        <div id="layoutSidenav_content">
+            <main>
+
+                <partial name="_Notification" />
+                @RenderBody()
+
+            </main>
+
+        </div>
+    </div>
+
+
+    <!---MDB-->
+    <!-- Bootstrap core JS-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <!-- Core theme JS-->
+    <!--<script src="js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>-->
+    <!-- Bootstrap core JS-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <!-- Core theme JS-->
+    <!--<script src="js/scripts.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="~/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="~/assets/demo/chart-area-demo.js"></script>
+    <script src="~/assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="~/js/datatables-simple-demo.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,95 @@
+﻿@model VIMS.DataModel.User
+@{
+    ViewData["Title"] = "Citizen Profile Update";
+    Layout = "_Layout";
+}
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f6d365;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
+</style>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-6 mb-4 mb-lg-0">
+                <div class="card mb-3" style="border-radius: .5rem;">
+                    <div class="row g-0">
+                        <div class="col-md-4 gradient-custom text-center text-white"
+                             style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/706/706807.png"
+                                 alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+
+                           
+
+                   
+                                <h3>Citizen</h3>
+                                <a asp-action="UserProfile"><i class="fas fa-user-alt mb-5"></i></a>
+                          
+
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <h6>Update Information</h6>
+                                <hr class="mt-0 mb-4">
+                                <form asp-action="CitizenEdit">
+                                    <div class="row pt-1">
+
+                                        <input type="hidden" asp-for="Uid" />
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Name" class="control-label"></label>
+                                            <input asp-for="Name" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Phone" class="control-label"></label>
+                                            <input asp-for="Phone" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Email" class="control-label"></label>
+                                            <input asp-for="Email" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Address" class="control-label"></label>
+                                            <input asp-for="Address" class="form-control" />
+
+                                        </div>
+                                        
+                                           
+                                            <input type="hidden" asp-for="NID" class="form-control" />
+
+                                  
+                                           
+                                            <input asp-for="Vehnum" type="hidden" class="form-control" />
+
+                                      
+
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Password" class="control-label"></label>
+                                            <input asp-for="Password" class="form-control" />
+
+                                        </div>
+                                        <div>
+                                            <p>You Can't Change Your NID And Vehicle Number</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Save" class="btn btn-primary" />
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

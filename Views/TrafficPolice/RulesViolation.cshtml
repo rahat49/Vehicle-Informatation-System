@@ -1,0 +1,68 @@
+﻿@model VIMS.DataModel.RulesViolationForm
+@{
+    ViewData["Title"] = "Add Rules Violation Case";
+    Layout = "_TrafficPoliceLayout";
+}
+<div class="container-fluid px-4">
+
+    <h1 class="mt-4">Add Rules Violation Case</h1>
+
+    <form asp-action="RulesViolation">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row g-3 align-items-center">
+            <div class="col-6">
+                <label asp-for="TPoliceName" class="form-label">Traffic Police Name</label>
+                <input asp-for="TPoliceName" type="text" class="form-control" required>
+                <span asp-validation-for="TPoliceName" class="text-danger"></span>
+            </div>
+
+            <div class="col-6">
+                <label asp-for="RulesType" class="form-label">Rules Type</label>
+                <input asp-for="RulesType" type="text" class="form-control">
+                <span asp-validation-for="RulesType" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="VehCategory" class="form-label">Vehicle Category</label>
+                <select asp-for="VehCategory" class="form-select" aria-label="Default select example">
+                    <option selected>Select Vehicle Category</option>
+                    <option value="Bike">Bike</option>
+                    <option value="Car">Car</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Truck">Truck</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label asp-for="Vehnum" class="form-label">Vehicle Number</label>
+                <input asp-for="Vehnum" type="text" class="form-control" required>
+                <span asp-validation-for="RulesType" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="VehOwnerName" class="form-label">Vehicle Owner Name</label>
+                <input asp-for="VehOwnerName" type="text" class="form-control" required>
+                <span asp-validation-for="VehOwnerName" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+                <label asp-for="Fees" class="form-label">Fees</label>
+                <input asp-for="Fees" type="text" class="form-control" required>
+                <span asp-validation-for="Fees" class="text-danger"></span>
+            </div>
+
+            <div class="col-6">
+                <label asp-for="Location" class="form-label">Location</label>
+                <input asp-for="Location" type="text" class="form-control" required>
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="col-6">
+
+                <input type="hidden" asp-for="Date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+
+            </div>
+        </div>
+        <button style="margin-top:20px;" type="submit" asp-action="RulesViolation" asp-controller="TrafficPolice" class="btn btn-outline-primary">Submit</</button>
+
+   </form>
+
+</div>
+

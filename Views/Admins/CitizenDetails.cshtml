@@ -1,0 +1,67 @@
+﻿@model VIMS.DataModel.User
+
+@{
+    ViewData["Title"] = "Citizen Details";
+    Layout = "_AdminLayout";
+}
+<style>
+    .container {
+        margin: 10px;
+    }
+
+    .row{
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+
+    <h1>Details</h1>
+
+    <div>
+        <h4>Citizen</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.NID)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.NID)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Vehnum)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Vehnum)
+            </dd>
+           
+        </dl>
+    </div>
+    <div>
+        <a asp-action="CitizenData" class="text-decoration-none">Back to List</a> |
+        <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>

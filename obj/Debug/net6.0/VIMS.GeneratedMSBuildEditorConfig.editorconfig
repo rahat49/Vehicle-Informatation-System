@@ -1,0 +1,324 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VIMS
+build_property.RootNamespace = VIMS
+build_property.ProjectDir = /Users/rahat/Documents/VIMS/VIMS/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = /Users/rahat/Documents/VIMS/VIMS
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/Accident.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0FjY2lkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/AccidentReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0FjY2lkZW50UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0FkbWluRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/Citizendata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0NpdGl6ZW5kYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/CitizenDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0NpdGl6ZW5EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/CitizenDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0NpdGl6ZW5EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/CitizenEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0NpdGl6ZW5FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/CitizenReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0NpdGl6ZW5SZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/Notice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL05vdGljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/NoticeDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL05vdGljZURlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/NoticeDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL05vdGljZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/NoticeEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL05vdGljZUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/NoticeView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL05vdGljZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/RenewAppDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlbmV3QXBwRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/RenewApproved.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlbmV3QXBwcm92ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/RenewApprovedDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlbmV3QXBwcm92ZWREZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/RenewRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlbmV3UmVxdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ReportCitizenPDF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlcG9ydENpdGl6ZW5QREYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ReportFitnessRenew.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlcG9ydEZpdG5lc3NSZW5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ReportFitnessRenewPDF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlcG9ydEZpdG5lc3NSZW5ld1BERi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ReportTpolicePDF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1JlcG9ydFRwb2xpY2VQREYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/RulesViolationPDF.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1J1bGVzVmlvbGF0aW9uUERGLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ServiceCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1NlcnZpY2VDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ServiceDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1NlcnZpY2VEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ServiceEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1NlcnZpY2VFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ServiceView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1NlcnZpY2VWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/TpoliceCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Rwb2xpY2VDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/TpoliceDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Rwb2xpY2VEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/TpoliceDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Rwb2xpY2VEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/TpoliceEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Rwb2xpY2VFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/TpoliceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Rwb2xpY2VMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/TpoliceReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Rwb2xpY2VSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/Vehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1ZlaGljbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/Vehiclelist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1ZlaGljbGVsaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Admins/ViolationReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5zL1Zpb2xhdGlvblJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Master/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Master/Notice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL05vdGljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Master/NoticeView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWFzdGVyL05vdGljZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_MasterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYXN0ZXJMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Ob3RpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_ReportLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19SZXBvcnRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_TrafficPoliceLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19UcmFmZmljUG9saWNlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/Accidentlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9BY2NpZGVudGxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/AccidentReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9BY2NpZGVudFJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/AddAccidentCase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9BZGRBY2NpZGVudENhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/PDFAccident.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9QREZBY2NpZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/PDFRulesViolation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9QREZSdWxlc1Zpb2xhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/RulesViolation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9SdWxlc1Zpb2xhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/rulesViolationlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9ydWxlc1Zpb2xhdGlvbmxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/RulesviolationReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9SdWxlc3Zpb2xhdGlvblJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/TpDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9UcERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/TpProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9UcFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/TrafficPolice/TpProfileEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhZmZpY1BvbGljZS9UcFByb2ZpbGVFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/AccidentReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvQWNjaWRlbnRSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/CitizenEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvQ2l0aXplbkVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/FitnessApplicationView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRml0bmVzc0FwcGxpY2F0aW9uVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/RenewApply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvUmVuZXdBcHBseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/RenewStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvUmVuZXdTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/Service.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvU2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvVXNlclByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Users/ViolationReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvVmlvbGF0aW9uUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/rahat/Documents/VIMS/VIMS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-d82pftkp0w

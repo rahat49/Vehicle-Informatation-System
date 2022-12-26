@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Traffic Police Dashboard";
+    Layout = "_TrafficPoliceLayout";
+}
+<head>
+  
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Traffic Police Dashboard</h1>
+
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="media d-flex">
+                            <div class="align-self-center">
+                                <i class='fas fa-exclamation-triangle' style='font-size:40px'></i>
+                            </div>
+                            <div class="media-body text-right">
+                                <h3>@ViewBag.rulesviolation</h3>
+                                <span>Rules Violation Case</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="media d-flex">
+                            <div class="align-self-center">
+                                <i class="fas fa-car-crash danger font-large-2 float-left" style='font-size:40px;color:red'></i>
+                            </div>
+                            <div class="media-body text-right">
+                                <h3>@ViewBag.accident</h3>
+                                <span>Accident Case</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                           
+
+
+
+
+    </div>
+    </div>

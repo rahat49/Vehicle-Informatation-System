@@ -1,0 +1,99 @@
+﻿@model IEnumerable<VIMS.DataModel.RulesViolationForm>
+@{
+    ViewData["Title"] = "Rules Violation List";
+    Layout = "_AdminLayout";
+}
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+</head>
+<style>
+
+    .tgroup, h1, p {
+        margin: 10px;
+    }
+</style>
+<div>
+    <h1 class="mt-4">Rules Violation Report - @ViewBag.rulesviolation</h1>
+    <p>
+        <a class="btn btn-primary" asp-action="RulesViolationPDF">Report</a>
+
+
+    </p>
+    <div class="tgroup">
+        <table class="table table-striped table-dark text-center" id="myTable">
+            <thead>
+                <tr>
+                    <th>
+                        Traffic Police Name
+                    </th>
+                    <th>
+                        Rules Type
+
+                    </th>
+                    <th>
+                        Vehicle Category
+
+                    </th>
+                    <th>
+                        Vehicle Number
+
+                    </th>
+                    <th>
+                        Vehicle Owner Name
+
+                    </th>
+                    <th>
+                        Fees
+
+                    </th>
+                    <th>
+                        Location
+                    </th>
+                    <th>
+                        Date
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TPoliceName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RulesType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VehCategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VehOwnerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fees)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Location)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
+    
+    <script>$(document).ready(function () {
+            $('#myTable').DataTable();
+        });</script>
+

@@ -1,0 +1,85 @@
+﻿@model IEnumerable<VIMS.DataModel.AccidentCase>
+@{
+    ViewData["Title"] = "Accident Report";
+    Layout = "_Layout";
+}
+
+<head>
+    <link href="http://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" />
+
+
+</head>
+<header class="text-dark" style="margin-top:90px;">
+    <div class="container px-4 text-center">
+        <h1>Accident Report</h1>
+
+    </div>
+</header>
+@if (Model.Count() == 0)
+{
+    <div class="d-flex justify-content-center">
+        <h3 class="alert alert-success text-dark ">You Don't Have Any Accident Record</h3>
+    </div>
+
+}
+
+else
+{
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Accident Type</th>
+                <th scope="col">Vehicle Type</th>
+                <th scope="col">Vehicle Number</th>
+                <th scope="col">Accident Date</th>
+                <th scope="col">Accident Location</th>
+                <th scope="col">Vehicle Damage</th>
+                <th scope="col">Total People</th>
+                <th scope="col">Injured People</th>
+                <th scope="col">Death people</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccidentType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccidentVCate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Vehnum)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ADate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Alocation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Damage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tpeople)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Injuredp)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Deathp)
+                    </td>
+
+                </tr>
+
+
+            }
+
+        </tbody>
+    </table>
+}
+

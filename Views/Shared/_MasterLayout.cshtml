@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    <!-----Notification Toast cdn-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <style>
+        .gradient-custom {
+            background-image: url(/images/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            <partial name="_Notification" />
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
+

@@ -1,0 +1,67 @@
+﻿@model VIMS.DataModel.TrafficPolice
+
+@{
+    ViewData["Title"] = "Traffic Police Details";
+    Layout = "_AdminLayout";
+}
+<style>
+    .container {
+        margin: 10px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+
+    <h1>Details</h1>
+
+    <div>
+        <h4>Traffic Police</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Policeid)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Policeid)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Designation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Designation)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Range)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Range)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a class="text-decoration-none" asp-action="TpoliceEdit" asp-route-id="@Model?.Tid">Edit</a> |
+        <a class="text-decoration-none" asp-action="TpoliceList">Back to List</a>
+        | <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>

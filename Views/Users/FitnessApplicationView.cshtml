@@ -1,0 +1,80 @@
+﻿@model VIMS.DataModel.Renewapply
+@{
+    ViewData["Title"] = "Renew Apply Status";
+    Layout = "_Layout";
+}
+<header class="text-dark" style="margin-top:90px;">
+    <div class="container px-4 text-center">
+        <h1>Application View</h1>
+
+    </div>
+</header>
+<div class="container">
+    <table class="table table-secondary table-bordered border-dark">
+
+        <tbody>
+            <tr>
+                <td class="fw-bold">Vehicle Owner Name</td>
+                <td>@Html.DisplayFor(model => model.OwnerName)</td>
+            </tr>
+
+    <tr>
+        <td class="fw-bold">Owner Address</td>
+        <td>@Html.DisplayFor(model => model.OwnerAddress)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Phone Number</td>
+        <td>@Html.DisplayFor(model => model.Phone)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Vehicle Category</td>
+        <td>@Html.DisplayFor(model => model.Vcategory)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Vehicle Number</td>
+        <td>@Html.DisplayFor(model => model.Vehnum)</td>
+    </tr>
+
+    <tr>
+        <td class="fw-bold">Brand Name</td>
+        <td>@Html.DisplayFor(model => model.Brandname)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Color</td>
+        <td>@Html.DisplayFor(model => model.Color)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Chassis No.</td>
+        <td>@Html.DisplayFor(model => model.ChassisNo)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Engine No.</td>
+        <td>@Html.DisplayFor(model => model.EngineNo)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Vehicle Registration Date</td>
+        <td>@Html.DisplayFor(model => model.Registrationdate)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Tax Token Number</td>
+        <td>@Html.DisplayFor(model => model.TaxTNumber)</td>
+    </tr>
+    <tr>
+        <td class="fw-bold">Tax Token Expiry </td>
+        <td>@Html.DisplayFor(model => model.TTExpirydate)</td>
+    </tr>
+    <tr>
+
+        <td class="fw-bold">Status</td>
+        <td>@Html.DisplayFor(model => model.Status)</td>
+    </tr>
+
+
+
+
+    </tbody>
+    </table>
+
+</div>
+        
+   

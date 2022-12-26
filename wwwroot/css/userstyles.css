@@ -1,0 +1,13 @@
+﻿body {
+    background-image: url(/images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

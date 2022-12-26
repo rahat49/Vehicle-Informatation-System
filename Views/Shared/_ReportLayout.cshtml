@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <div class="text-center">
+        <h1>VIMS-Vehicle Information Management System</h1>
+        <h3>Bangladesh Road Transport Authority</h3>
+        <h6>Government of the People's Republic of Bangladesh</h6>
+    </div>
+    <div>
+        <p>
+            Date:@DateTime.Now.ToString("dd-MM-yyyy") <br />
+            <button onclick="window.print()" class="btn btn-success btn-sm mt-2">Print</button>
+        </p>
+       </div>
+        <div>
+            @RenderBody()
+        </div>
+        <footer class="py-4 mt-auto">
+            <div class="container-fluid px-4">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Vehicle Information System 2022</div>
+
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
+

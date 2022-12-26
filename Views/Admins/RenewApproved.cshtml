@@ -1,0 +1,69 @@
+﻿@model IEnumerable<VIMS.DataModel.Renewapply>
+@{
+    ViewData["Title"] = "Renew Apply Request";
+    Layout = "_AdminLayout";
+}
+<style>
+
+    .h1 {
+        margin:30px;
+    }
+    .tgroup {
+       
+        margin-top: 30px;
+    
+</style>
+<div class="container">
+    <h1 class="mt-4">Renew Application Status </h1>
+  
+    <div class="tgroup">
+        <table class="table table-striped table-dark text-center">
+
+            <thead>
+                <tr>
+
+                    <th>Owner Name</th>
+                    <th>Phone Number</th>
+                    <th>Vehicle Category</th>
+                    <th>Vehicle Number</th>
+                    <th>Status</th>
+                    <th>Detail</th>
+                   
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OwnerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vcategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+                        <td>
+                            <span class="badge rounded-pill bg-secondary ">   @Html.DisplayFor(modelItem => item.Status)</span>
+
+                        </td>
+                        <td>
+                            <a class="text-decoration-none btn btn-info btn-sm" asp-action="RenewApprovedDetail" asp-route-id="@item.id">View</a>
+
+                        </td>
+
+                      
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,167 @@
+﻿@model VIMS.DataModel.User
+@{
+    ViewData["Title"] = "Create Your Account";
+
+    Layout = "_LoginLayout";
+
+}
+
+
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+
+        background-image: url(/images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+
+    .card-registration .select-arrow {
+        top: 13px;
+    }
+
+    #foot {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#37517e;" id="mainNav">
+    <div class="container px-4">
+        <a class="navbar-brand" asp-action="Index" asp-controller="Master">VIMS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Master">Home</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Citizen Portal
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-white" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a asp-action="SignUp" asp-controller="Users" class="dropdown-item">Sign Up</a></li>
+
+                        <li><a asp-action="Login" asp-controller="Users" class="dropdown-item">Log In</a></li>
+
+                        <li><a href="http://www.brta.gov.bd/site/view/legislative_information" class="dropdown-item">Act & Rules</a></li>
+
+                    </ul>
+                <li class="nav-item"><a asp-action="Login" asp-controller="TrafficPolice" class="nav-link">Traffic Portal</a></li>
+                <li class="nav-item"><a asp-action="Login" asp-controller="Admins" class="nav-link">BRTA</a></li>
+                <li class="nav-item"><a asp-action="Notice" asp-controller="Master" class="nav-link">Notice</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About section-->
+<section class="vh-100 gradient-custom">
+    <div class="container py-2 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-4">
+                        <h3 class="mb-2 pb-2 pb-md-0 mb-md-4">Create Your Account</h3>
+
+
+                        <form asp-action="SignUp">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Name">Your Name</label>
+                                        <input asp-for="Name" type="text" id="form3Example1c" class="form-control form-control-lg" required />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Email">Your Email</label>
+                                        <input asp-for="Email" type="email" id="form3Example3c" class="form-control form-control-lg" required placeholder="name@example.com" />
+                                        <span asp-validation-for="Email" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Phone">Phone Number</label>
+                                        <input asp-for="Phone" type="text" class="form-control form-control-lg" required />
+
+                                        <span asp-validation-for="Phone" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-4">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="NID">NID Number</label>
+                                        <input asp-for="NID" type="text" id="form3Example4cd" class="form-control form-control-lg" required />
+
+                                        <span asp-validation-for="NID" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Address">Your Address</label>
+                                        <input asp-for="Address" type="text" id="form3Example4cd" class="form-control form-control-lg" required />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Vehicle">Vehicle Number</label>
+                                        <input asp-for="Vehnum" type="text" id="Vehnum" class="form-control form-control-lg" placeholder="e.g. Dhaka Metro KA-123" required />
+                                        <span asp-validation-for="Vehnum" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6 mb-1">
+
+                                    <div class="form-outline">
+                                        <label class="form-label" for="Password">Password</label>
+                                        <input asp-for="Password" type="password" id="pass" class="form-control form-control-lg" required />
+
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="mt-6  pt-2">
+                                <button type="submit" asp-action="SignUp" asp-controller="Users" class="btn btn-primary btn-md">Submit </button>
+                                <p class="mt-2">Already have account? Login 👉 <a class="text-decoration-none" asp-action="Login" asp-controller="Users"> Here </a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<div class="mt-4">
+    <footer class="py-4" id="foot" style="background-color:#37517e;">
+        <div class="container px-4">
+            <p class="m-0 text-white">Copyright &copy; Vehicle Information System 2022</p>
+        </div>
+    </footer>
+</div>
+

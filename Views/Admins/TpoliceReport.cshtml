@@ -1,0 +1,74 @@
+﻿@model IEnumerable<VIMS.DataModel.TrafficPolice>
+
+@{
+    ViewData["Title"] = "Traffic Police Report";
+    Layout = "_AdminLayout";
+}
+
+<style>
+
+    .tgroup, h1,p {
+        margin: 10px;
+    }
+</style>
+<div>
+    <h1 class="mt-4">Traffic Police Report - @ViewBag.Trafficpolice</h1>
+    <p>
+        <a class="btn btn-primary" asp-action="ReportTpolicePDF">Report</a>
+
+    </p>
+    <div class="tgroup">
+        <table class="table table-striped table-dark text-center">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Phone)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Policeid)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Designation)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Range)
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Phone)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Policeid)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Designation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Range)
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

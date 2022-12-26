@@ -1,0 +1,44 @@
+﻿@model VIMS.DataModel.Service
+
+@{
+    ViewData["Title"] = "Create Service";
+    Layout = "_AdminLayout";
+}
+<style>
+    #link {
+        margin-top: 10px;
+    }
+</style>
+<div class="m-4">
+    <h1 class="mt-4">Add Service</h1>
+
+    <form asp-action="ServiceCreate">
+        <div class="row ">
+
+
+            <div class="form-group col-7">
+                <label asp-for="CompanyName">Company Name</label>
+                <input asp-for="CompanyName" type="text" class="form-control">
+            </div>
+
+
+            <div class="form-group col-7 mt-3">
+                <label asp-for="Address">Address</label>
+                <input asp-for="Address" type="text" class="form-control">
+            </div>
+            <div class="form-group col-7 mt-3">
+                <label asp-for="Contact">Contact</label>
+                <input asp-for="Contact" type="url" class="form-control">
+            </div>
+            <div class="form-group">
+                <button style="margin-top:20px;" type="submit" class="btn btn-outline-primary">Create</button>
+
+            </div>
+        </div>
+    </form>
+    <div id="link">
+        <a class="text-decoration-none" asp-action="ServiceView" asp-controller="Admins">View Service</a>
+        | <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>
+

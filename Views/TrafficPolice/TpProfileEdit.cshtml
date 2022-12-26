@@ -1,0 +1,95 @@
+﻿@model VIMS.DataModel.TrafficPolice
+@{
+    ViewData["Title"] = "Traffic Police Profile Update";
+    Layout = "_TrafficPoliceLayout";
+}
+<style>
+    .gradient-custom {
+        /* fallback for old browsers */
+        background: #f6d365;
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
+    }
+</style>
+<section class="vh-100">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-6 mb-4 mb-lg-0">
+                <div class="card mb-3" style="border-radius: .5rem;">
+                    <div class="row g-0">
+                        <div class="col-md-4 gradient-custom text-center text-white"
+                             style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                            <img src="https://cdn-icons-png.flaticon.com/512/190/190628.png?w=826&t=st=1671531539~exp=1671532139~hmac=f47e0a2a77077cbb8bdb76ab0f0d8fd807900ef121a80227221df85eb527da45"
+                                 alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+
+
+
+
+                            <h3>Traffic Police</h3>
+                            <a asp-action="TpProfile"><i class="fas fa-user-alt mb-5"></i></a>
+
+
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <h6>Update Information</h6>
+                                <hr class="mt-0 mb-4">
+                                <form asp-action="TpProfileEdit" method="post">
+                                    <div class="row pt-1">
+
+                                        <input type="hidden" asp-for="Tid" />
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Name" class="control-label"></label>
+                                            <input asp-for="Name" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Phone" class="control-label"></label>
+                                            <input asp-for="Phone" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Email" class="control-label"></label>
+                                            <input asp-for="Email" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Range" class="control-label"></label>
+                                            <input asp-for="Range" class="form-control" />
+
+                                        </div>
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Designation" class="control-label"></label>
+                                            <input asp-for="Designation" class="form-control" />
+
+                                        </div>
+                                       
+                                           
+                                            <input type="hidden" asp-for="Policeid" class="form-control" />
+
+                                  
+                                        <div class="col-8 mb-3">
+                                            <label asp-for="Password" class="control-label"></label>
+                                            <input asp-for="Password" class="form-control" />
+
+                                        </div>
+                                        <div>
+                                            <p>You Can't Change Your Police ID</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Update" class="btn btn-outline-success" />
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

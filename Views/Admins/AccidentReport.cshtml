@@ -1,0 +1,118 @@
+﻿@model IEnumerable<VIMS.DataModel.AccidentCase>
+@{
+    ViewData["Title"] = "Accident Case Report";
+    Layout = "_AdminLayout";
+
+}
+<head>
+
+    <link href="https://printjs-4de6.kxcdn.com/print.min.js" />
+    <link href="https://printjs-4de6.kxcdn.com/print.min.css" />
+
+</head>
+<style>
+
+    .tgroup, h1, p {
+        margin: 10px;
+    }
+</style>
+<div>
+    <h1 class="mt-4">Accident Case Report - @ViewBag.accident</h1>
+    <p>
+        <a class="btn btn-primary" asp-action="Accident">Report</a>
+       </p>
+    <div class="tgroup">
+        <table class="table table-striped table-dark text-center">
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+
+                    <th>
+                        Accident Type
+                    </th>
+                    <th>
+                        Accident Vehicle Type
+
+                    </th>
+                    <th>
+                        Vehicle Number
+
+                    </th>
+                    <th>
+                        Vehicle Category
+
+                    </th>
+                    <th>
+                        Accident Date
+
+                    </th>
+                    <th>
+                        Accident Location
+
+                    </th>
+                    <th>
+                        Damage
+
+                    </th>
+                    <th>
+                        Total People
+                    </th>
+                    <th>
+                        Injured People
+                    </th>
+                    <th>
+                        Death People
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @{ int i = 1;}
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @i
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccidentType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccidentVCate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AccidentVCate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ADate)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Alocation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Damage)%
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tpeople)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Injuredp)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Deathp)
+                        </td>
+
+                    </tr>
+                        i++;
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+

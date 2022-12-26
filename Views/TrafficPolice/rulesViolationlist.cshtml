@@ -1,0 +1,82 @@
+﻿@model IEnumerable<VIMS.DataModel.RulesViolationForm>
+@{
+    ViewData["Title"] = "Rules Violation List";
+    Layout = "_TrafficPoliceLayout";
+}
+<style>
+
+    .tgroup, h1,p {
+        margin: 30px;
+    }
+</style>
+<div>
+    <h1 class="mt-4">Rules Violation List</h1>
+    <p>
+        <a class="btn btn-primary" asp-action="RulesViolation">Add New Case</a>
+    </p>
+    <div class="tgroup">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TPoliceName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.RulesType)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model. VehCategory)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Vehnum)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.VehOwnerName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Fees)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Location)
+                    </th>
+                     <th>
+                        @Html.DisplayNameFor(model => model.Date)
+                    </th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TPoliceName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RulesType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VehCategory)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Vehnum)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.VehOwnerName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Fees)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Location)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

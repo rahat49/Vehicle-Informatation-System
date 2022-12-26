@@ -1,0 +1,133 @@
+﻿@model VIMS.DataModel.Renewapply
+
+@{
+    ViewData["Title"] = "Renew Application Details";
+    Layout = "_AdminLayout";
+}
+<style>
+    .container {
+        margin: 10px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+
+    <h1>Renew Application</h1>
+
+    <div>
+        <h4>Details</h4>
+        <hr />
+        <dl class="row">
+          
+            <dt class="col-sm-4">
+                Vehicle Owner Name
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.OwnerName)
+            </dd>
+            <dt class="col-sm-4">
+                Owner Address
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.OwnerAddress)
+            </dd>
+            <dt class="col-sm-4">
+                Phone Number
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+            <dt class="col-sm-4">
+                Vehicle Category
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Vcategory)
+            </dd>
+            <dt class="col-sm-4">
+                Vehicle Number
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Vehnum)
+            </dd>
+            <dt class="col-sm-4">
+                Brand Name
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Brandname)
+            </dd>
+            <dt class="col-sm-4">
+                Color
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Color)
+            </dd>
+            <dt class="col-sm-4">
+                Brand Name
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Brandname)
+            </dd>
+            <dt class="col-sm-4">
+                Chessis No.
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.ChassisNo)
+            </dd>
+            <dt class="col-sm-4">
+                Engine No.
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.EngineNo)
+            </dd>
+            <dt class="col-sm-4">
+                Vehicle Registration Date
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Registrationdate)
+            </dd>
+            <dt class="col-sm-4">
+                Tax Token Number
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.TaxTNumber)
+            </dd>
+            <dt class="col-sm-4">
+                Tax Token Expiry
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.TTExpirydate)
+            </dd>
+            <dt class="col-sm-4">
+                Fees
+            </dt>
+            <dd class="col-sm-6">
+                @Html.DisplayFor(model => model.Fees) Taka
+            </dd>
+            <dt class="col-sm-4">
+                Status
+            </dt>
+            <dd class="col-sm-6">
+                <span class="badge rounded-pill bg-warning text-dark">  @Html.DisplayFor(model => model.Status)</span>
+            </dd>
+            <dt class="col-sm-4 mt-4 ">
+                Action
+            </dt>
+            <dd class="col-sm-6 mt-4">
+                <a class="btn btn-success btn-sm" asp-action="sandy" asp-route-id="@Model?.id">Approved</a>
+
+                |
+                <a class="btn btn-danger btn-sm" asp-action="Reject" asp-route-id="@Model?.id">Rejected</a>
+
+            </dd>
+        </dl>
+    </div>
+    <div>
+
+        <a class="text-decoration-none" asp-action="RenewRequest">Back to List</a> |
+        <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+    </div>
+</div>
+

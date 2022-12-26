@@ -1,0 +1,78 @@
+﻿@model VIMS.DataModel.TrafficPolice
+
+@{
+    ViewData["Title"] = "Traffic Police Account Delete";
+    Layout = "_AdminLayout";
+}
+<style>
+    .container {
+        margin: 10px;
+    }
+
+    .row {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+
+
+    <h1>Delete</h1>
+
+    <h3>Are you sure you want to delete this account?</h3>
+    <div>
+    
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Policeid)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Policeid)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Designation)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Designation)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Range)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Range)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+            <dt class="col-sm-2">
+                Action
+            </dt>
+            <dd class="col-sm-10">
+                <form asp-action="TpoliceDelete">
+                    <input type="hidden" asp-for="Tid" />
+                    <input type="submit" value="Delete" class="btn btn-outline-danger btn-sm" />
+                </form>
+                    </dd>
+
+
+        </dl>
+            <a asp-action="TpoliceList" class="text-decoration-none">Back to List</a>
+            | <a asp-action="AdminDashboard"> <i class='fa fa-home' style="font-size:20px;color:black"></i></a>
+        
+    </div>
+</div>
